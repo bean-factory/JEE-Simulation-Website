@@ -122,6 +122,7 @@ body{
     font-size: 17px;
 }
 #section_info_img{
+	display: none;
 	margin: 10px 0px 0px 15px;
 }
 #next_options{
@@ -278,7 +279,7 @@ body{
 }
 .a{
 	margin-bottom: 10px;
-	background-position: -4px -5px;
+	background-position: -4.5px -5px;
 	color: #ffffff;
 }
 .a:hover{
@@ -325,6 +326,7 @@ body{
     right: 0;
 }
 .question{
+	margin-top: 10px;
 	background-color: #ffffff;
   	font-size: 19px;
   	margin-bottom: 10px;
@@ -422,6 +424,7 @@ h1 {
     color: white;
     font-family:sans-serif;
     padding-left: 0.1em;
+	padding: 0.06em;
 }
 #topics_list {
 	display: none;

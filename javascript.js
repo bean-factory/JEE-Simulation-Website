@@ -48,6 +48,17 @@
   var children = list2.childNodes;
 	for(var i = 0; i<children.length; i++){
 		children[i].addEventListener("click", function(){
+			var sectionlist = document.getElementById("section_names").children;
+			for (var i = 0; i < sectionlist.length; i++) {
+				var section = sectionlist[i];
+				if ( section.classList.contains('section_selected') ) {
+				section.classList.remove('section_selected');
+				section.classList.add('section_unselected');
+				}
+			}
+			this.classList.remove('section_unselected');
+			this.classList.add('section_selected');
+			console.log(this.innerHTML);
 			loadTopic(this.innerHTML);
 		})
 	}
