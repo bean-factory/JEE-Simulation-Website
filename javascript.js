@@ -22,6 +22,7 @@
 	ref.once("value",function(snapshot){
 	ob = JSON.parse(JSON.stringify(snapshot.val()));
 	for (var key in ob) {
+		console.log(key);
 		topics.push(key);
 	}
 	/*var list = document.getElementById("topics_list");
@@ -29,6 +30,7 @@
 	var list2 = document.getElementById("section_names");
 	list2.innerHTML = "";
 	for(topi in topics){
+		console.log(topi);
 		/*var node = document.createElement("option");  
 		node.setAttribute("value",topics[topi]); 
 		node.text = topics[topi];

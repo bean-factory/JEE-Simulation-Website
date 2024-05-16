@@ -2,15 +2,18 @@
 	margin: 0;
 	padding: 0;
 }
-
+html {
+	height: 100%;
+}
 body{
-	font-family: OpenSans-Regular;
+	font-family:sans-serif;
 	font-size: 12px;
 	overflow:hidden;
+	height: 100%;
 }
 
 #header_1{
-	font-family: Arial,Helvetica,sans-serif;
+	font-family:sans-serif;
 	font-size: 12px;
 	background-color: #363636; 
 	color: #f7f64e;
@@ -19,7 +22,7 @@ body{
 }
 .just_2{
 	color: #FFFFFF;
-    font-family: arial,verdana,helvetica,sans-serif;
+    font-family:sans-serif;
     float: right;
     display: inline-block;
     margin: 0px 10px 0px 10px;
@@ -35,7 +38,7 @@ body{
   	width: auto;
   	display: inline-block;
   	font-size: 13px;
-  	font-family: arial,verdana,helvetica,sans-serif;
+  	font-family:sans-serif;
 	border: 1px solid #38a9eb;
 }
 #exam_name{
@@ -102,13 +105,14 @@ body{
 	font-size: 13px;
     font-weight: normal;
     border: 1px solid #7E9DB9;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family:sans-serif;
     padding: 2px 20px 2px 0px;
+	display: none;
 }
 #question_area_scrollable{
-	background-image: url("download.png");
+//	background-image: url("download.png");
     overflow: auto;
-    height: 350px;
+    min-height: calc(100% - 284px);
 }
 .question-title{
 	border-bottom: 1px solid #dbdbdb;
@@ -128,6 +132,7 @@ body{
 	border: 1px solid #c3c3c1;
 	overflow: auto;
 	padding-left: 10px;
+	z-index: 2;
 }
 .button{
 	color: #252525;
@@ -142,7 +147,7 @@ body{
 	vertical-align: middle;
 	margin: 8px 2px 8px 2px;
 	float: left;
-	font-family: arial,verdana,helvetica,sans-serif;
+	font-family:sans-serif;
 	cursor: pointer;
 }
 .button:hover{
@@ -162,6 +167,7 @@ body{
 	right: 0;
 	top: 85px;
 	width: 250px;
+	height: 100%;
 }
 
 #person_info{
@@ -189,6 +195,7 @@ body{
 	border: 2px solid #000;
     border-right: none;
     margin-top: 5px;
+	height: 100%;
 }
 #color_info{
 	width: 100%;
@@ -211,17 +218,17 @@ body{
     padding-top: 6px;
     text-align: center;
     vertical-align: middle;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
 }
 .just_6{
-	font-family: Arial,Helvetica,sans-serif;
+	font-family:sans-serif;
 
 }
 #long{
 	width: 86%;
 }
 #small_header{
-	background: #4e85c5 none repeat scroll 0 0;
+	background: #4#e85c5 none repeat scroll 0 0;
     color: #fff;
     padding: 10px;
     font-size: 16px;
@@ -232,10 +239,11 @@ body{
 	font-weight: bold;
 	overflow: auto;
 	padding: 10px;
-	height: 183px;
+	height: 100px;
+    min-height: calc(100% - 468px);
 }
 .item{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
 	background-position: -57px -6px;
     width: 49px;
     height: 33px;
@@ -338,7 +346,7 @@ body{
 .slide{
 	padding-left: 20px;
 	padding-right: 300px;
-  	width: 100%;
+//  	width: 100%;
   	z-index: 1;
   	opacity: 0;
   	transition: opacity 0s;
@@ -349,7 +357,7 @@ body{
   	z-index: 2;
 }
 #favourite{
-   	font-family: sans-serif;
+   	font-family:sans-serif;
     font-size: 15px;
     background-color: #FFF;
     color: #000;
@@ -360,7 +368,7 @@ body{
     margin-right: 10px;
     border: 1px solid #279;
     border-color: #279;
-    display: inline-block;
+    display: none;
 }
 label{
 	background-color: #ffffff;
@@ -368,11 +376,12 @@ label{
 }
 #favourite_box{
 	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:sans-serif;
 	color: #fff;
 	position: absolute;
 	top: 25px;
 	right: 0;
+	display: none;
 }
 #reload{
 	color: #252525;
@@ -386,7 +395,7 @@ label{
 	text-align: center;
 	vertical-align: middle;
 	margin: 2px 2px 8px 2px;
-	font-family: arial,verdana,helvetica,sans-serif;
+	font-family:sans-serif;
 	cursor: pointer;
 	float: right;
 }
@@ -407,4 +416,13 @@ label{
 	margin: 15px;
 	padding: 15px;
 	background-color: #fff;
+}
+h1 {
+    font-size: 3em;
+    color: white;
+    font-family:sans-serif;
+    padding-left: 0.1em;
+}
+#topics_list {
+	display: none;
 }
